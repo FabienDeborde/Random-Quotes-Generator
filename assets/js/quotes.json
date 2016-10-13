@@ -1,6 +1,12 @@
 {
 	"quotes": [
 		{
+			"id": "0",
+			"quote": "Anyone who has lost track of time when using a computer knows the propensity to dream, the urge to make dreams come true and the tendency to miss lunch.",
+			"author": "Tim Berners-Lee",
+			"image": "www.randomimage.com"
+		},
+		{
 			"id": "1",
 			"quote": "Be who you are and say what you feel, because those who mind don’t matter and those who matter don’t mind.",
 			"author": "Dr. Seuss",
@@ -172,12 +178,6 @@
 			"id": "29",
 			"quote": "Things do not happen. Things are made to happen.",
 			"author": "John F. Kennedy",
-			"image": "www.randomimage.com"
-		},
-		{
-			"id": "30",
-			"quote": "Anyone who has lost track of time when using a computer knows the propensity to dream, the urge to make dreams come true and the tendency to miss lunch.",
-			"author": "Tim Berners-Lee",
 			"image": "www.randomimage.com"
 		}
 	]
