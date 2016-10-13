@@ -23,10 +23,11 @@ $( document ).ready(function() {
     var author = obj.quotes[randomNum].author;
     var image = obj.quotes[randomNum].image;
 
-    var msg = 'id: ' + id ;
-    msg += '<br/> quote: ' + quote;
-    msg += '<br/> author: ' + author;
-    msg += '<br/> image: ' + image;
+    var msg = image ;
+    msg += '<br/>Quote Nº ' + id;
+    msg += '<br/> "' + quote + '"';
+    msg += '<br/> <em>' + author + '</em>';
+
 
 
     $('#quote').html(msg);
