@@ -7,10 +7,26 @@ head
   link(rel="stylesheet", href="/assets/css/main.css")
   title Random Quotes Generator
 body
-  .container
-    h1 My Random Quotes Generator!  
-    #quote Test
-  
-  
+  .outerContainer
+    .containerBG
+      .container
+        .image
+                
+        .quoteContainer
+          .number 
+          .numbertxt No.
+            br 
+            span#id 01
+          .quote “On passe une moitié de sa vie à attendre ceux qu'on aimera et l'autre moitié à quitter ceux qu'on aime.”
+            
+            .author 
+              span#name Victor Hugo 
+              span#date (1802 - 1885)
+              br
+              span#activity Artiste, écrivain, Poète, Romancier 
+        
+          a.btn Random
+    
+    
   script(src="/assets/js/vendor/jquery-3.1.1.min.js")
-  script(src="/assets/js/functions.js")
+  //script(src="/assets/js/functions.js")
