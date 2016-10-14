@@ -2,8 +2,7 @@ $( document ).ready(function() {
 
   // Get started!
 
-
-  $.getJSON("/assets/js/quotes.json", function(json){
+    $.getJSON("/assets/js/quotes.json", function(json){
 
     //Make a string of my data
     var text = JSON.stringify(json);
@@ -17,20 +16,19 @@ $( document ).ready(function() {
     var randomNum = Math.floor(Math.random() * objLength);
 
     // Get the data from my quotes[randomNum] object
-
     var id = parseInt(obj.quotes[randomNum].id) + 1;
     var quote = obj.quotes[randomNum].quote;
     var author = obj.quotes[randomNum].author;
+    var date = obj.quotes[randomNum].date;
+    var activity = obj.quotes[randomNum].activity;
     var image = obj.quotes[randomNum].image;
 
-    var msg = image ;
-    msg += '<br/>Quote Nº ' + id;
-    msg += '<br/> "' + quote + '"';
-    msg += '<br/> <em>' + author + '</em>';
-
-
-
-    $('#quote').html(msg);
+    // Insert the data into the html
+    $('#id').text(id);
+    $('#name').text(author);
+    $('#quotetxt').text(quote);
+    $('#date').text('1802-1885');
+    $('#activity').text('Artiste, écrivain, Poète');
 
   });
 
