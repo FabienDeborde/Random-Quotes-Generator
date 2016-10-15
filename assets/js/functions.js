@@ -1,7 +1,7 @@
 $( document ).ready(function() {
-
+  randomQuote();
   // Get started!
-
+  function randomQuote(){
     $.getJSON("/assets/js/quotes.json", function(json){
 
     //Make a string of my data
@@ -13,7 +13,7 @@ $( document ).ready(function() {
     // Get the length of my quotes array
     var objLength = obj.quotes.length;
 
-    var randomNum = Math.floor(Math.random() * objLength);
+    var randomNum = Math.floor(Math.random() * objLength); ;
 
     // Get the data from my quotes[randomNum] object
     var id = parseInt(obj.quotes[randomNum].id) + 1;
@@ -25,11 +25,18 @@ $( document ).ready(function() {
 
     // Insert the data into the html
     $('#id').text(id);
-    $('#name').text(author);
-    $('#quotetxt').text(quote);
-    $('#date').text('1802-1885');
-    $('#activity').text('Artiste, écrivain, Poète');
+    $('#name').text(author + ' ');
+    $('#quotetxt').text('"' + quote + '"');
+    $('#date').text('(' + date + ')');
+    $('#activity').text(activity);
+    $('.image').css('background-image', 'url(' + image + ')');
+    });
 
+  }
+
+  $('#random').on('click', function() {
+    randomQuote();
   });
+
 
 });
