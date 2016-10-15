@@ -23,6 +23,9 @@ $( document ).ready(function() {
     var activity = obj.quotes[randomNum].activity;
     var image = obj.quotes[randomNum].image;
 
+    var share_url = 'http://codepen.io/fabien_d/pen/jrKGZv';
+
+
     // Insert the data into the html
     $('#id').text(id);
     $('#name').text(author + ' ');
@@ -30,13 +33,22 @@ $( document ).ready(function() {
     $('#date').text('(' + date + ')');
     $('#activity').text(activity);
     $('.image').css('background-image', 'url(' + image + ')');
-    });
 
+    // Update the text link in the Tweeter button
+
+
+    //$('#tweet').html('<a id="tweet" href="https://twitter.com/intent/tweet?text=' + quote + '" data-show-count="false" data-size="large" class="twitter-share-button">Tweet</a>');
+    $('#twitter-share-section').html('<a href="https://twitter.com/share" class="twitter-share-button" data-url="' + share_url +'" data-size="large" data-text="' + quote + '" data-count="none" data-hashtags="Quotes">Tweet</a>');
+    //$('a#tweet').prop("href", "https://twitter.com/intent/tweet?text=" + quote);
+    twttr.widgets.load();
+    });
   }
+
 
   $('#random').on('click', function() {
     randomQuote();
   });
+
 
 
 });

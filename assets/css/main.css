@@ -336,7 +336,7 @@ hr {
 .btn {
   display: inline-block;
   height: 84px;
-  width: 260px;
+  width: 275px;
   padding: 0 30px;
   line-height: 84px;
   vertical-align: middle;
@@ -500,4 +500,15 @@ hr {
 
 .outerContainer .containerBG .container .btn svg .st1 {
   fill: white;
+}
+
+.outerContainer .containerBG .container .btn .btnText {
+  display: inline-block;
+}
+
+.outerContainer .containerBG .container .twitter-share-button {
+  position: absolute !important;
+  bottom: 30px;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
