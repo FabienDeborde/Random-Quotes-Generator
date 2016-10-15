@@ -36,10 +36,7 @@ $( document ).ready(function() {
 
     // Update the text link in the Tweeter button
 
-
-    //$('#tweet').html('<a id="tweet" href="https://twitter.com/intent/tweet?text=' + quote + '" data-show-count="false" data-size="large" class="twitter-share-button">Tweet</a>');
     $('#twitter-share-section').html('<a href="https://twitter.com/share" class="twitter-share-button" data-url="' + share_url +'" data-size="large" data-text="' + quote + '" data-count="none" data-hashtags="Quotes">Tweet</a>');
-    //$('a#tweet').prop("href", "https://twitter.com/intent/tweet?text=" + quote);
     twttr.widgets.load();
     });
   }
